@@ -1,14 +1,23 @@
-# **RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos**
+# FSUF-Net, IEEE TGRS 2024, RGB Spectral Super-Resolution
+---
+## RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos
 
-### **Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza**
+***Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza***
+
+*IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, Feb. 2024*
+
+---
+
+![framework](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/framework.png)
+
+Fig. 1. Overview of the proposed FSUF-Net method.
+
+
 
 ## Abstract
 
 Hyperspectral videos (HSVs) play an important role in the monitoring domain, as they can provide more information than RGB videos about the movement of interesting objects from the perspective of material interpretation. However, the acquisition of HSV data is expensive and time-consuming, whereas RGB videos are readily available. In order to obtain HSV data from its corresponding RGB data, this paper proposes a lightweight frequency-spectrum unfolding network (FSUF-Net) for spectral super-resolution (SSR) of RGB video data. Specifically, the proposed FSUF-Net method belongs to a data-knowledge-driven joint paradigm, which is an interpretable SSR model instead of an end-to-end black-box architecture. The FSUF-Net consists of five main steps. First, the conversion representation of RGB video data to HSV data is derived into an initial recovery term, a data term, and a prior term according to a variable splitting method. Second, the spectral response function between hyperspectral images (HSIs) and RGB images is utilized to achieve the initial recovery term. Third, a convolutional neural network (CNN)-based frequency-domain subnetwork (called F-Net) is designed to solve the data subproblem for recovering the spatial detail information from the HSI, and a Transformer-based spectrum-domain subnetwork (called S-Net) is developed to solve the prior subproblem for reconstructing the spectral information of the HSI. Fourth, two network modules are employed to conduct parametric self-learning. Finally, the HSV data can be obtained in a fixed number of iterations, including alternately solving the above data subproblem and the prior subproblem. Experiments performed on several real HSV datasets demonstrate that the FSUF-Net can effectively reconstruct HSV from RGB videos as compared to traditional and state-of-the-art SSR methods.
 
-## Our method
-
-![framework](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/framework.png)
 
 ## Results
 
@@ -28,6 +37,8 @@ the reconstructed image of the SSR methods are presented. The first row is the g
 Reflectance of “Board” video 9-th frame from the WHISPERS dataset at the timber, metal, and plant positions. (a) Timber, metal, and plant positions. (b) Reflectance at the timber position. (c) Reflectance at the metal position. (d) Reflectance at the plant position. (e) Total reflectance error at the timber, metal, and plant positions for each SSR methods.
 
 ![image-20240707161341011](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image4.png)
+
+
 
 In preparation for release soon.
 
