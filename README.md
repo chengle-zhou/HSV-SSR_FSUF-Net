@@ -20,7 +20,7 @@ Spectral super-resolution obtained for the WHISPERS hyperspectral video dataset 
 
 ![image-20240707161056020](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image2.png)
 
-Reconstructed results of “Worker” video 9-th frame form the WHISPERS dataset. Along 470, 500, 540, 580, and 620nm, the ground truth (GT) and
+Reconstructed results of “Worker” video 9-th frame from the WHISPERS dataset. Along 470, 500, 540, 580, and 620nm, the ground truth (GT) and
 the reconstructed image of the SSR methods are presented. The first row is the ground truth (CC/SAM), and the second to last rows are the results of competitive methods and our FSUF-Net method.
 
 ![image-20240707161212394](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image3.png)
