@@ -1,4 +1,4 @@
-#### FSUF-Net, IEEE TGRS 2024, RGB Spectral Super-Resolution
+#### FSUF-Net | IEEE TGRS 2024 | SSR of RGB Videos
 ---
 ## RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos
 
