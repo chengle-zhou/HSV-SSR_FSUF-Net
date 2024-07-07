@@ -14,20 +14,20 @@ Hyperspectral videos (HSVs) play an important role in the monitoring domain, as 
 
 Analysis of the influence of parameters D and N on the SSR performance of the FSUF-Net for different datasets. (a) WHISPERS dataset. (b) HyViD dataset. (c) Parameters of the FSUF-Net on the two HSV datasets.
 
-![image-20240707160804744](../MY-IMAGE/FSUF-Net/image1.png)
+![image-20240707160804744](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image1.png)
 
 Spectral super-resolution obtained for the WHISPERS hyperspectral video dataset by the competitive methods and our FSUF-Net method. The bold type is used for the optimal indicator, and the italic underline is used for the sub-optimal indicator.
 
-![image-20240707161056020](./assets/image-20240707161056020.png)
+![image-20240707161056020](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image2.png)
 
 Reconstructed results of “Worker” video 9-th frame form the WHISPERS dataset. Along 470, 500, 540, 580, and 620nm, the ground truth (GT) and
 the reconstructed image of the SSR methods are presented. The first row is the ground truth (CC/SAM), and the second to last rows are the results of competitive methods and our FSUF-Net method.
 
-![image-20240707161212394](./assets/image-20240707161212394.png)
+![image-20240707161212394](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image3.png)
 
 Reflectance of “Board” video 9-th frame from the WHISPERS dataset at the timber, metal, and plant positions. (a) Timber, metal, and plant positions. (b) Reflectance at the timber position. (c) Reflectance at the metal position. (d) Reflectance at the plant position. (e) Total reflectance error at the timber, metal, and plant positions for each SSR methods.
 
-![image-20240707161341011](./assets/image-20240707161341011.png)
+![image-20240707161341011](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/image4.png)
 
 In preparation for release soon.
 
