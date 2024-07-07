@@ -8,7 +8,7 @@ Hyperspectral videos (HSVs) play an important role in the monitoring domain, as 
 
 ## Our method
 
-![framework](./assets/framework.png)
+![framework](https://github.com/chengle-zhou/MY-IMAGE/blob/1adca3bc2310c2c4ea2ec3578bb0423e02348328/FSUF-Net/framework.png)
 
 ## Results
 
