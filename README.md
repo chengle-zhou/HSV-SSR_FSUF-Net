@@ -14,7 +14,7 @@ Hyperspectral videos (HSVs) play an important role in the monitoring domain, as 
 
 Analysis of the influence of parameters D and N on the SSR performance of the FSUF-Net for different datasets. (a) WHISPERS dataset. (b) HyViD dataset. (c) Parameters of the FSUF-Net on the two HSV datasets.
 
-![image-20240707160804744](./assets/image-20240707160804744.png)
+![image-20240707160804744](../MY-IMAGE/FSUF-Net/image1.png)
 
 Spectral super-resolution obtained for the WHISPERS hyperspectral video dataset by the competitive methods and our FSUF-Net method. The bold type is used for the optimal indicator, and the italic underline is used for the sub-optimal indicator.
 
