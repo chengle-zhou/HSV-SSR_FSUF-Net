@@ -27,11 +27,11 @@ Spectral super-resolution obtained for the WHISPERS hyperspectral video dataset 
 Reconstructed results of “Worker” video 9-th frame form the WHISPERS dataset. Along 470, 500, 540, 580, and 620nm, the ground truth (GT) and
 the reconstructed image of the SSR methods are presented. The first row is the ground truth (CC/SAM), and the second to last rows are the results of competitive methods and our FSUF-Net method.
 
-![image-20240707161212394](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/image4.png)
+![image-20240707161212394](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/image3.png)
 
 Reflectance of “Board” video 9-th frame from the WHISPERS dataset at the timber, metal, and plant positions. (a) Timber, metal, and plant positions. (b) Reflectance at the timber position. (c) Reflectance at the metal position. (d) Reflectance at the plant position. (e) Total reflectance error at the timber, metal, and plant positions for each SSR methods.
 
-![image-20240707161341011](./assets/image-20240707161341011.png)
+![image-20240707161341011](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/image4.png)
 
 In preparation for release soon.
 
