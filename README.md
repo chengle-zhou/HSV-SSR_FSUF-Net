@@ -1,43 +1,35 @@
 #### FSUF-Net | IEEE TGRS 2024 | SSR of RGB Videos
 ---
-## RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos
+# **RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos**
 
-***Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza***
-
-*IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, May 2025*
-
----
-
-![framework](https://github.com/chengle-zhou/MY-IMAGE/blob/3bd29d7ea6331ad4f5e5043aad33e664991ec021/LRSRNet/LRSRNet.jpg)
-
-Fig. 1. Overview of the proposed LRSRNet method.
-
-
+### **Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza**
 
 ## Abstract
 
-Hyperspectral image change detection (HSI-CD) is a technique that intelligently checks the changed details in bi-temporal hyperspectral images (Bi-HSIs). Deep learning (DL), with the ability to model nonlinear changing features, has achieved promising results in HSI-CD, but the feature mining mechanism is unclear and the architecture design lacks transparency in such DL models. To alleviate this problem, this paper proposes a new low-rank and sparse representation-based deep unfolding network (LRSRNet) for HSI-CD. For feature mining mechanism, the LRSRNet adopts a low-rank and sparse sub-network (LRSnet) and a change detection sub-network (CDnet). The former is responsible for extracting low-rank features with valuable information and suppressing sparse features containing interference information, while the latter aims to obtain change information from low-rank features. For architecture design, the LRSnet formulates the HSI as a low-rank estimation, sparse estimation, and hyperspectral reconstruction in a low-rank and sparse model, and iteratively optimizes and updates the above sub-problems through deep networks. A new CDnet is designed as a concise convolutional architecture to extract change information from representative Bi-HSIs features. Experiments on three real datasets demonstrate the performance superiority of the proposed LRSRNet method over nine model-driven, data-driven, and model-data-joint-driven HSI-CD algorithms in both qualitative and quantitative evaluations.
+Hyperspectral videos (HSVs) play an important role in the monitoring domain, as they can provide more information than RGB videos about the movement of interesting objects from the perspective of material interpretation. However, the acquisition of HSV data is expensive and time-consuming, whereas RGB videos are readily available. In order to obtain HSV data from its corresponding RGB data, this paper proposes a lightweight frequency-spectrum unfolding network (FSUF-Net) for spectral super-resolution (SSR) of RGB video data. Specifically, the proposed FSUF-Net method belongs to a data-knowledge-driven joint paradigm, which is an interpretable SSR model instead of an end-to-end black-box architecture. The FSUF-Net consists of five main steps. First, the conversion representation of RGB video data to HSV data is derived into an initial recovery term, a data term, and a prior term according to a variable splitting method. Second, the spectral response function between hyperspectral images (HSIs) and RGB images is utilized to achieve the initial recovery term. Third, a convolutional neural network (CNN)-based frequency-domain subnetwork (called F-Net) is designed to solve the data subproblem for recovering the spatial detail information from the HSI, and a Transformer-based spectrum-domain subnetwork (called S-Net) is developed to solve the prior subproblem for reconstructing the spectral information of the HSI. Fourth, two network modules are employed to conduct parametric self-learning. Finally, the HSV data can be obtained in a fixed number of iterations, including alternately solving the above data subproblem and the prior subproblem. Experiments performed on several real HSV datasets demonstrate that the FSUF-Net can effectively reconstruct HSV from RGB videos as compared to traditional and state-of-the-art SSR methods.
 
+## Our method
+
+![framework](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/framework1.png)
 
 ## Results
 
-False color images and GT for all datasets. (a)-(c) are false color images of T1 and T2 and GT on the River dataset. (d)-(f) are false color images of T1 and T2 and GT on the Farmland dataset. (g)-(i) are false color images of T1 and T2 and GT on the Santa Barbara dataset. (j) Pixel legend.
+Analysis of the influence of parameters D and N on the SSR performance of the FSUF-Net for different datasets. (a) WHISPERS dataset. (b) HyViD dataset. (c) Parameters of the FSUF-Net on the two HSV datasets.
 
-![image-1](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/LRSRNet/img-1.jpg)
+![image-20240707160804744](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/image1.png)
 
-CD results of various methods on the River dataset. (a) Groundtruth (GT). (b) CVA. (c) PCAKM. (d) IR-MAD. (e) SVM. (f) CSANet. (g) MSDFFN. (h) ReCNN. (i) MSCSCNet. (j) LRSRNet. Note that {\color{red}$\blacksquare$} indicates FP (i.e., over-detection) and {\color{green}$\blacksquare$} represents FN (i.e., under-detection).
+Spectral super-resolution obtained for the WHISPERS hyperspectral video dataset by the competitive methods and our FSUF-Net method. The bold type is used for the optimal indicator, and the italic underline is used for the sub-optimal indicator.
 
-![image-2](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/LRSRNet/img-2.jpg)
+![image-20240707161056020](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/image2.png)
 
-CD results of various methods on the Farmland dataset. (a) Groundtruth (GT). (b) CVA. (c) PCAKM. (d) IR-MAD. (e) SVM. (f) CSANet. (g) MSDFFN. (h) ReCNN. (i) MSCSCNet. (j) LRSRNet. Note that {\color{red}$\blacksquare$} indicates FP (i.e., over-detection) and {\color{green}$\blacksquare$} represents FN (i.e., under-detection).
+Reconstructed results of “Worker” video 9-th frame form the WHISPERS dataset. Along 470, 500, 540, 580, and 620nm, the ground truth (GT) and
+the reconstructed image of the SSR methods are presented. The first row is the ground truth (CC/SAM), and the second to last rows are the results of competitive methods and our FSUF-Net method.
 
-![image-3](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/LRSRNet/img-3.jpg)
+![image-20240707161212394](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/FSUF-Net/image4.png)
 
-CD results of various methods on the Santa Barbara dataset. (a) Groundtruth (GT). (b) CVA. (c) PCAKM. (d) IR-MAD. (e) SVM. (f) CSANet. (g) MSDFFN. (h) ReCNN. (i) MSCSCNet. (j) LRSRNet. Note that {\color{red}$\blacksquare$} indicates FP (i.e., over-detection) and {\color{green}$\blacksquare$} represents FN (i.e., under-detection).
+Reflectance of “Board” video 9-th frame from the WHISPERS dataset at the timber, metal, and plant positions. (a) Timber, metal, and plant positions. (b) Reflectance at the timber position. (c) Reflectance at the metal position. (d) Reflectance at the plant position. (e) Total reflectance error at the timber, metal, and plant positions for each SSR methods.
 
-![image-4](https://github.com/chengle-zhou/MY-IMAGE/blob/3a8804efe13f6ad114f6f00c6c540f40e5cde5c2/LRSRNet/img-4.jpg)
-
-
+![image-20240707161341011](./assets/image-20240707161341011.png)
 
 In preparation for release soon.
 
@@ -45,21 +37,21 @@ Please cite our new paper:
 
 **Plain Text:**
 
-Chengle Zhou, Zhi He, Jian Dong, Yunfei Li, Jinchang Ren and Antonio Plaza, "[Low-Rank and Sparse Representation Meet Deep Unfolding: A New Interpretable Network for Hyperspectral Change Detection](https://ieeexplore.ieee.org/document/11002607)," ***IEEE Transactions on Geoscience and Remote Sensing***, vol. 63, pp. 1-16, 2025, Art no. 5513516, doi: 10.1109/TGRS.2025.
+Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza, "[RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos](https://ieeexplore.ieee.org/document/10419369)," IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, 2024, Art no. 5609318, doi: 10.1109/TGRS.2024.3361929.
 
 **BibTex:**
 
 ```latex
-@ARTICLE{zhou2025lrsrnet,
-  author={Zhou, Chengle and He, Zhi and Dong, Jian and Li, Yunfei and Ren, Jinchang and Plaza, Antonio},
+@ARTICLE{zclVSSR2024,
+  author={Zhou, Chengle and He, Zhi and Lou, Anjun and Plaza, Antonio},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Low-Rank and Sparse Representation Meet Deep Unfolding: A New Interpretable Network for Hyperspectral Change Detection}, 
-  year={2025},
-  volume={63},
+  title={RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos}, 
+  year={2024},
+  volume={62},
   number={},
-  pages={1-16},
-  keywords={Feature extraction;Hyperspectral imaging;Sparse matrices;Sparse approximation;Noise;Iterative methods;Optimization;Transformers;Principal component analysis;Estimation;Bitemporal hyperspectral images (Bi-HSIs);change detection;deep unfolding;low-rank and sparse representation},
-  doi={10.1109/TGRS.2025.3564996}}
+  pages={1-18},
+  keywords={Spatial resolution;Videos;Image reconstruction;Superresolution;Optimization;Convolutional neural networks;Transformers;Deep unfolding;hyperspectral videos (HSVs);spectral super-resolution (SSR);Transformer},
+  doi={10.1109/TGRS.2024.3361929}}
 ```
 
 
