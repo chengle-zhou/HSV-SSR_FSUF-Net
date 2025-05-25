@@ -1,8 +1,10 @@
 #### FSUF-Net | IEEE TGRS 2024 | SSR of RGB Videos
 ---
-# **RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos**
+## RGB-to-HSV: A Frequency-Spectrum Unfolding Network for Spectral Super-Resolution of RGB Videos
 
-### **Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza**
+***Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza**
+
+*IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, Feb. 2024*
 
 ## Abstract
 
