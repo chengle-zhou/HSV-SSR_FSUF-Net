@@ -4,7 +4,7 @@
 
 ***Chengle Zhou, Zhi He, Anjun Lou, and Antonio Plaza***
 
-*IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, Feb. 2024*
+*IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-18, May 2025*
 
 ---
 
